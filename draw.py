@@ -16,7 +16,7 @@ class Gravity:
 def put_text(img, text, gravity, margin=10):
     h, w = img.shape[:2]
     # getTextSize, result: ((width, height), baseline)
-    x, y = cv2.getTextSize(text, FONT_FACE, FONT_SCALE, THICKNESS)[0];
+    x, y = cv2.getTextSize(text, FONT_FACE, FONT_SCALE, THICKNESS)[0]
     # putText(img, text, org, fontFace, fontScale, color, thickness, lineType)
     org = {
         Gravity.TOP_LEFT:       (margin, margin+y),
